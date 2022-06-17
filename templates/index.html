@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block body %}
+
+<!-- hero area -->
+<section class="hero-section hero" data-background="" style="background-image: url({{ url_for('static',filename='images/hero-area/banner-bg.png') }});">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center zindex-1">
+        <h1 class="mb-3">Image Captioning<br>
+          Generator</h1>
+        <p class="mb-4">Aplikasi pendeteksi deskripsi gambar otomatis.</p>
+        <a href="/upload" class="btn btn-secondary btn-lg">Try It</a>
+        <!-- banner image -->
+        <img class="img-fluid w-100 banner-image" src="{{ url_for('static',filename='images/hero-area/new.png') }}" alt="banner-img">
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <div id="scene">
+    <img class="img-fluid hero-bg-1 up-down-animation" src="{{ url_for('static',filename='images/background-shape/feature-bg-2.png') }}" alt="">
+    <img class="img-fluid hero-bg-2 left-right-animation" src="{{ url_for('static',filename='images/background-shape/seo-ball-1.png') }}" alt="">
+    <img class="img-fluid hero-bg-3 left-right-animation" src="{{ url_for('static',filename='images/background-shape/seo-half-cycle.png') }}" alt="">
+    <img class="img-fluid hero-bg-4 up-down-animation" src="{{ url_for('static',filename='images/background-shape/green-dot.png') }}" alt="">
+    <img class="img-fluid hero-bg-5 left-right-animation" src="{{ url_for('static',filename='images/background-shape/blue-half-cycle.png') }}" alt="">
+    <img class="img-fluid hero-bg-6 up-down-animation" src="{{ url_for('static',filename='images/background-shape/seo-ball-1.png') }}" alt="">
+    <img class="img-fluid hero-bg-7 left-right-animation" src="{{ url_for('static',filename='images/background-shape/yellow-triangle.png') }}" alt="">
+    <img class="img-fluid hero-bg-8 up-down-animation" src="{{ url_for('static',filename='images/background-shape/service-half-cycle.png') }}" alt="">
+    <img class="img-fluid hero-bg-9 up-down-animation" src="{{ url_for('static',filename='images/background-shape/team-bg-triangle.png') }}" alt="">
+  </div>
+</section>
+<!-- /hero-area -->
+
+
+{% endblock %}
